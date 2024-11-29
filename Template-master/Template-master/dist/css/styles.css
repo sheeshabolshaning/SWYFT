@@ -10967,7 +10967,9 @@ header.masthead .masthead-heading {
   margin-bottom: 2rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-
+.carousel-item img{
+  background-image: cover;
+}
 @media (min-width: 768px) {
   header.masthead {
     padding-top: 17rem;
