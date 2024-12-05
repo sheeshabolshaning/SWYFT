@@ -11336,3 +11336,59 @@ section#contact form#contactForm :-ms-input-placeholder {
   font-size: 0.9rem;
   font-family:'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
+
+#feats .nav-tabs {
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#feats .nav-link {
+  font-size: 1.25rem;
+  padding: 15px 30px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+#feats .nav-link.active {
+  background-color: white;
+  color: #474F7A;
+}
+
+
+/* Tab Content Styling */
+#feats .tab-content {
+  padding: 20px;
+  background-color: var(--bs-light);
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the images within the tabs */
+#feats .portfolio-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#feats .portfolio-caption {
+  margin-top: 15px;
+  text-align: center;
+}
+
+/* Responsive Image and Tab Adjustments */
+@media (max-width: 768px) {
+  #feats .nav-link {
+      font-size: 1rem;
+      padding: 10px 20px;
+  }
+
+  #feats .portfolio-item {
+      margin-bottom: 20px;
+  }
+}
+
+#team .section-heading span {
+  color: #7D0AFF;
+}
+

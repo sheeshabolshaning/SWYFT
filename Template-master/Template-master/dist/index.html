@@ -15,6 +15,7 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet"/> <!--NEED TO IMPORT THE DOWNLOADED BOOTSRAP-->
     </head>
+
     <body id="page-top">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
@@ -40,7 +41,7 @@
             <div class="container">
                 <div class="masthead-subheading">The New Way Of Shopping!</div>
                 <div class="masthead-heading text-uppercase">Shop Fast, Shop SWYFT</div>
-                <a class="btn btn-primary btn-xl text-uppercase" href="#services">START HERE</a>
+                <a class="btn btn-primary btn-xl text-uppercase" href="#feats">HOW IT WORKS</a>
             </div>
         </header>
         <!-- Partners-->
@@ -51,14 +52,14 @@
                     <h3 class="section-subheading italic">Branches where you can find us</h3>
                 </div>
                 <!-- Carousel -->
-<div id="demo" class="carousel slide" data-bs-ride="carousel">
+                    <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
 <!-- Indicators/dots -->
-<div class="carousel-indicators">
-    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-</div>
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                        </div>
 
 <!-- The slideshow/carousel -->
 <div class="carousel-inner">
@@ -70,14 +71,14 @@
         </div>
     </div>
     <div class="carousel-item">
-    <img src="assets/img/partners/Landers.jpg" alt="Chicago" class="d-block w-100">
+    <img src="assets/img/partners/Landers.jpg" alt="Landers" class="d-block w-100">
     <div class="carousel-caption">
             <h1>Landers</h1>
             <p>Landers offers high-quality goods at competitive prices, daily savings, exclusive discounts, and an online shopping</p>
         </div>
     </div>
     <div class="carousel-item">
-    <img src="assets/img/partners/Waltermart.jpg" alt="New York" class="d-block w-100">
+    <img src="assets/img/partners/Waltermart.jpg" alt="WalterMart" class="d-block w-100">
     <div class="carousel-caption">
             <h1>Waltermart</h1>
             <p>WalterMart is a community mall that focuses on local businesses and welcoming service.</p>
@@ -95,112 +96,71 @@
 </div>
             </div>
         </section>
-        <!-- Features and Services-->
-        <section class="page-section bg-light" id="feats">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Features and Services</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+        <!-- Features and Services Section -->
+<section class="page-section bg-light" id="feats">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Features and Services</h2>
+            <h3 class="section-subheading text-muted">Explore everything we have to offer.</h3>
+        </div>
+
+        <!-- Tab navigation for Features and Services -->
+        <ul class="nav nav-tabs justify-content-center mb-4" id="featureServiceTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="features-tab" data-bs-toggle="tab" data-bs-target="#features" type="button" role="tab" aria-controls="features" aria-selected="true">
+                    Features
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="services-tab" data-bs-toggle="tab" data-bs-target="#services" type="button" role="tab" aria-controls="services" aria-selected="false">
+                    Services
+                </button>
+            </li>
+        </ul>
+
+        <!-- Tab content for Features and Services -->
+        <div class="tab-content" id="featureServiceTabsContent">
+            <!-- Features Tab -->
+            <div class="tab-pane fade show active" id="features" role="tabpanel" aria-labelledby="features-tab">
+                <div class="row align-items-center">
+                    <!-- Text Content on Left -->
+                    <div class="col-lg-6 mb-4">
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-subheading-text-muted"> our partner stores include advanced, user-friendly self-checkout systems designed to enhance the shopping experience. These stores utilize smart shelves capable of detecting weight fluctuations, which signal when items are either removed from or placed on the shelves. The smart shelves work in conjunction with our smart carts, which feature integrated RFID sensors to identify the products currently in the cart. Each product is labeled with an RFID price tag to enable this functionality. The stores are also equipped with Electronic Article Surveillance (EAS) systems at all checkout areas and exit points, ensuring a secure and efficient security framework. Additionally, the integration of RFID technology, smart shelves, and smart carts contributes to accurate and real-time inventory management.</div>
+                        </div>
+                    </div>
+                    <!-- Image on Right -->
+                    <div class="col-lg-6 mb-4">
+                        <img class="img-fluid" src="assets/img/feats/1.jpg" alt="SELF CHECKOUT KIOSK" />
+                    </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 1-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/1.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Threads</div>
-                                <div class="portfolio-caption-subheading text-muted">Illustration</div>
-                            </div>
-                        </div>
+            </div>
+
+            <!-- Services Tab -->
+            <div class="tab-pane fade" id="services" role="tabpanel" aria-labelledby="services-tab">
+                <div class="row align-items-center">
+                    <!-- Image on Left -->
+                    <div class="col-lg-6 mb-4">
+                        <img class="img-fluid" src="assets/img/feats/2.jpg" alt="CARD PAYMENT" />
                     </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 2-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/2.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Explore</div>
-                                <div class="portfolio-caption-subheading text-muted">Graphic Design</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 3-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/3.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Finish</div>
-                                <div class="portfolio-caption-subheading text-muted">Identity</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-                        <!-- Portfolio item 4-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/4.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Lines</div>
-                                <div class="portfolio-caption-subheading text-muted">Branding</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
-                        <!-- Portfolio item 5-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/5.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Southwest</div>
-                                <div class="portfolio-caption-subheading text-muted">Website Design</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <!-- Portfolio item 6-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/6.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Window</div>
-                                <div class="portfolio-caption-subheading text-muted">Photography</div>
-                            </div>
+                    <!-- Text Content on Right -->
+                    <div class="col-lg-6 mb-4">
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-subheading text-muted">our stores include self-checkout kiosks, where customers can easily scan, pay, and proceed with their purchases. Cards are distributed at store entrances: non-members are issued temporary cards after verifying their identification, while members receive permanent cards linked to their accounts. These cards are also used to unlock the smart carts.</div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </div>
+</section>
+
+
         <!--Mission Vision -->
         <section class="page-section" id="about">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">MISSION & VISION</h2>
+                    <h2 class="section-heading text-uppercase">OUR HISTORY</h2>
                     <h3 class="section-subheading text-muted">How our Journey started</h3>
                 </div>
                 <ul class="timeline">
@@ -262,7 +222,7 @@
         <section class="page-section bg-light" id="team">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Meet The Ryse Team</h2>
+                    <h2 class="section-heading text-uppercase">Meet The <span><u>Ryse</u></span> Team</h2>
                     <h3 class="section-subheading text-muted">The Heralds of the Glorious Evolution of Innovation</h3>
                 </div>
                 <div class="row">
@@ -342,7 +302,7 @@
                     </div>
                 </div>                
                 <div class="row">
-                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p></div>
+                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">"Rising with Excellence, Building with Finesse"</p></div>
                 </div>
             </div>
         </section>
