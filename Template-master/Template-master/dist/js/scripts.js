@@ -52,3 +52,46 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+    // Get the button element
+    const toTopButton = document.getElementById('toTopButton');
+
+    // Show or hide the button with fun pop-up animation
+    window.addEventListener('scroll', function () {
+        if (document.documentElement.scrollTop > 100) {
+            toTopButton.classList.add('show');
+            toTopButton.classList.remove('hidden');
+        } else {
+            toTopButton.classList.add('hidden');
+            toTopButton.classList.remove('show');
+        }
+    });
+
+    // Smooth scroll to the top when the button is clicked
+    toTopButton.addEventListener('click', function () {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the default form submission
+        
+        // Validate form fields
+        var isValid = true;
+        var form = event.target;
+        
+        // Add your form validation logic here (if any)
+        
+        if (isValid) {
+            // Show success message
+            document.getElementById('submitSuccessMessage').classList.remove('d-none');
+            document.getElementById('submitErrorMessage').classList.add('d-none');
+            form.reset(); // Optionally reset the form after successful submission
+        } else {
+            // Show error message
+            document.getElementById('submitErrorMessage').classList.remove('d-none');
+            document.getElementById('submitSuccessMessage').classList.add('d-none');
+        }
+    });
+    

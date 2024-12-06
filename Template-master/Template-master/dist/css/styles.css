@@ -11392,3 +11392,72 @@ section#contact form#contactForm :-ms-input-placeholder {
   color: #7D0AFF;
 }
 
+#toTopButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000; /* Ensures it stays above other elements */
+  background-color: #474F7A; /* Bootstrap primary color */
+  color: white;
+  border: none;
+  border-radius: 50%; /* Makes it a perfect circle */
+  width: 50px; /* Width and height should be equal */
+  height: 50px;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  display: none; /* Initially hidden */
+  opacity: 0; /* Start invisible */
+  transform: scale(0); /* Start completely scaled down */
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition */
+}
+
+/* Visible State with Pop-Up Animation */
+#toTopButton.show {
+  display: block; /* Make it visible */
+  opacity: 1; /* Fade in */
+  transform: scale(1); /* Scale up to full size */
+}
+
+/* Hidden State */
+#toTopButton.hidden {
+  opacity: 0; /* Fade out */
+  transform: scale(0); /* Scale down completely */
+}
+
+/* Hover Effect */
+#toTopButton:hover {
+  background-color: #81689D; /* Darker shade of blue */
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Mission and Vision Section */
+#mission-vision {
+  padding: 80px 0;
+  background-color: #f8f9fa; /* Light gray background */
+}
+
+#mission-vision .card {
+  border: none; /* Remove card border */
+  border-radius: 10px; /* Rounded corners */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+#mission-vision .card:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+#mission-vision .card-title {
+  color: black !important; /* Ensures the color is applied */
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+#mission-vision .card-text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #6c757d; /* Muted text color */
+}
+
